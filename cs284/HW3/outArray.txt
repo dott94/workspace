@@ -1,0 +1,5 @@
+class average = 81.37 
+Student Alan has score 80.0 that is less than average
+Student Ada has score 75.6 that is less than average
+Student Leo has score 45.8 that is less than average
+highest score = 99.10 

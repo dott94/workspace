@@ -1,0 +1,58 @@
+Matrix1
+0	0	1	
+1	1	1	
+
+Matrix2
+0	0	1	
+2	2	2	
+
+Matrix4
+0	0	1	
+5	5	5	
+
+Matrix5
+1	2	
+2	4	
+3	6	
+
+Matrix7
+0.0	0.0	1.0	
+1.0	1.0	1.0	
+
+Matrix8
+0.0	0.0	1.0	
+2.0	2.0	2.0	
+
+Matrix9
+0.0	0.0	1.0	
+5.0	5.0	5.0	
+
+Matrix10
+1.0	2.0	
+2.0	4.0	
+3.0	6.0	
+
+Matrix1 add Matrix2
+0	0	2	
+3	3	3	
+
+Matrix1 subtract Matrix4
+0	0	0	
+-4	-4	-4	
+
+Matrix1 multiply Matrix5
+3	6	
+6	12	
+
+Matrix7 add Matrix8
+0.0	0.0	2.0	
+3.0	3.0	3.0	
+
+Matrix7 subtract Matrix8
+0.0	0.0	0.0	
+-1.0	-1.0	-1.0	
+
+Matrix7 multiply Matrix10
+3.0	6.0	
+6.0	12.0	
+

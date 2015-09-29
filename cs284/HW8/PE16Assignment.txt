@@ -1,0 +1,14 @@
+csc241 PE16 Assignment.txt
+
+     
+Extend the class LinkedListClass by adding the following operations:
+a. Find and delete the node with the smallest info in the list.
+ (Delete only the first occurrence and traverse the list only once.)
+
+b. Find and delete all occurrences of a given info from the list. 
+(Traverse the list only once.) 
+
+Add these as abstract functions in the class LinkedListClass and 
+provide the definitions of these methods in the class UnorderedLinkedList.
+Also test these functions in Driver program.
+ 

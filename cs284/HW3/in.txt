@@ -1,0 +1,6 @@
+Alan 80.0
+Greg 90.0
+Ali  99.1
+Ada  75.6
+Leo  45.8
+Nataly 97.7

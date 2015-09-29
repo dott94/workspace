@@ -1,0 +1,23 @@
+not so minishell
+~~~~~~$> ls -l	
+	reshow current cmd on resize
+	
+	-> move curser right
+	<- move curser left
+	^ (up) and down
+	for up, load previous command
+	for down, load next/current command
+	
+	(+5 points): remember history (.history)
+	
+	ctrl-A move curser to first letter
+	crtl-E move curser to end of cmd
+	ctrl-L clear screen (reshow prompt at the top + whatever you 		currently typed)
+	ctrl-K cut from curser to end of command
+	ctrl-Y yank(paste) wherever curser is
+	ctrl-w cut word backwards (multiple allowed)	
+	
+	(+5 points): cmd& means run as backgroud process
+	
+	backspace: erase previous char
+	ctrl-D erase next char [delete key] 

@@ -1,0 +1,11 @@
+CRACKER REPORT
+
+To run the program, simply make, run ./cracker <input_file> report.txt <timeout> <salt>. Both the dictionary attack and the brute force attack will be ran on the input file. The dictionary attack simply takes a line from the dictionary, converts to MD5, then compares that MD5 string with the input file MD5 strings. If there is a match, the corresponding password will be written to the results.txt file. For heuristics, we will append ascii characters 47 to 58 to the end of the dictionary passwords. We will also convert the first character of each password toupper. Essentially for every password, we create 11(ascii append)x2(toupper character) passwords. The brute force attack uses a series of for loops and outputs a string of 3, 4, or 5 characters using ascii character index. The strings created will be hashed and compared with the input file hash. Any matches will be outputted to the report.txt file. 
+
+
+
+
+What could system designers do to significantly hinder cracking efforts from anyone that obtains their password database? What does adding the salt achieve?
+
+First off, it is very important to make sure that all passwords stored in the database are very complex. Adding password requirements (like minimum of 12 characters, one capital letter, one lowercase letter, one special character) make passwords more complex and harder to deduce. 
+Second, it is pertinent that we hash passwords as a second line of defense. Hashing passwords with hashing algorithm like MD5 will convert a normal string of characters into a hash value. The hash value in the case of MD5 is expressed in a fixed 32 digit hexadecimal number. Hashing will make this sensitive data unrecognizable. In order to avoid an attacker simply comparing hashed passwords with the passwords in the database and deduce a match, we use salt to ensure the stored hash is unrepresentative of the corresponding password. We can randomize hashes by appending random strings, called "salt", to the password prior to hashing the string. This will ensure that the hash string is different from the original password hash. 
