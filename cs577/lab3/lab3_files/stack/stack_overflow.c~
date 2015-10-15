@@ -2,31 +2,23 @@
 #include <string.h>
 #include <stdlib.h>
 
-
-
-
 static char mybuf[4096];
-
-
 
 void canNeverExecute() 
 {
 	printf("Gotcha sucker\n");
-	//exit(0);
+	
 }
 
-
 void echo_input(char* arg)
-{
-	char buf[256] = "echo: ";
-
+{    
+	char buf[256] = "";
 	strcat(buf, arg);
 	puts(buf);
 }
 
 void read_input(FILE *fp, char *buf, size_t len)
 {
-
 	if (fread(buf, len, 1, fp) < 0) {
 		perror("error reading input");
 		exit (1);
