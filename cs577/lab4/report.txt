@@ -1,0 +1,5 @@
+For this lab, I used a similar method for all three methods. I created a text file filled with A's until the ret ptr was reached. For the first input file, I disas the unbelieveable function to get the instructin ptr. I overwrote the return ptr with the ins ptr. 
+
+For part 2, I called p puts to get the system address of puts. I put that address in replace of the ret ptr. I then wrote a HELLO WORLD string in the text file, fould its address, and called that after the puts address. The file looks like A.....A(puts addr)AAAA(hello world addr)(hello world string)
+
+For part 3, I did the same thing except I replaced the 4 padded A's in between puts addr and hello world addr with the addr of exit. The string went as follows: A......A(puts addr)(hello world addr)(exit addr)
